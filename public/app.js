@@ -17,6 +17,17 @@ mobileBtn.addEventListener("click", (e) => {
   }
 });
 
+// =============== changing bg of nav on scroll ===============
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("nav").style.cssText = "background: #4527b9;";
+  } else {
+    document.getElementById("nav").style.cssText = "background: none;";
+  }
+}
+
 // =============== accordion ===============
 const menuLinks = document.querySelectorAll(".accordion button");
 menuLinks.forEach((link) => {
