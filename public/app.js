@@ -28,6 +28,25 @@ function scrollFunction() {
   }
 }
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("contact").style.cssText = "background: #fff;";
+    document.querySelector(".text").style.cssText = "color: #000;";
+    // if (document.querySelector('.logo').classList.contains('block')) {
+    //   document.querySelector('.logo').classList.remove('block');
+    //   document.querySelector('.logoBlack').classList.add('block');
+    // } else if (document.querySelector('.logo').classList.contains('hidden')) {
+    //   document.querySelector('.logo').classList.remove('hidden');
+    //   document.querySelector('.logoBlack').classList.remove('block');
+    // }
+  } else {
+    document.getElementById("contact").style.cssText = "background: none;";
+    document.querySelector(".text").style.cssText = "color: #fff;";
+  }
+}
+
 // =============== accordion ===============
 const menuLinks = document.querySelectorAll(".accordion button");
 menuLinks.forEach((link) => {
