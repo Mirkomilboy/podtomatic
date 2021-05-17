@@ -72,3 +72,67 @@ menuLinks.forEach((link) => {
     }
   });
 });
+
+// =============== back to bop link ===============
+const topBtn = document.getElementById("btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    topBtn.classList.add('block');
+    topBtn.classList.remove('hidden');
+  } else {
+    topBtn.classList.add('hidden');
+    topBtn.classList.remove('block');
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// =============== scrollReveal ===============
+window.sr = ScrollReveal();
+  sr.reveal('.left', {
+    duration: 2000,
+    distance: '30px',
+    origin: 'right'
+  });
+  sr.reveal('.right', {
+    duration: 2000,
+    distance: '30px',
+    origin: 'left'
+  });
+
+  sr.reveal('.first', {
+    duration: 1500,
+    distance: '30px'
+  });
+  sr.reveal('.second', {
+    duration: 1500,
+    distance: '30px',
+    delay: 200
+  });
+  sr.reveal('.third', {
+    duration: 1500,
+    distance: '30px',
+    delay: 400
+  });
+  sr.reveal('.fourth', {
+    duration: 1500,
+    distance: '30px',
+    delay: 600
+  });
+  sr.reveal('.fifth', {
+    duration: 1500,
+    distance: '30px',
+    delay: 800
+  });
+  sr.reveal('.sixth', {
+    duration: 1500,
+    distance: '30px',
+    delay: 1000
+  });
