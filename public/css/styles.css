@@ -1283,6 +1283,11 @@ ul.navigation li:hover:after {
 		padding-top: 1.25rem;
 		padding-bottom: 1.25rem;
 	}
+
+	.md\:px-44 {
+		padding-left: 11rem;
+		padding-right: 11rem;
+	}
 }
 
 @media (min-width: 1024px) {
