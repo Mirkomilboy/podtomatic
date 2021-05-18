@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   mode: "jit",
   purge: ["./public/**/*.html"],
@@ -7,10 +9,25 @@ module.exports = {
       fontFamily: {
         inter: ["Inter"],
       },
+      transformOrigin: {
+        "0": "0%",
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-pseudo-elements'),
+    plugin(({addUtilities}) => {
+      const newUtilities = {
+        ".empty-content": {
+          content: "''",
+        },
+      }
+      addUtilities(newUtilities, {
+        variants: ["before", "after"],
+      });
+    })
+  ],
 }

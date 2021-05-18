@@ -9,6 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '482654329825120');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=482654329825120&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body class="text-white m-0 font-inter">
     <!-- navigation -->
@@ -18,11 +35,11 @@
             <a href="index.html"><img class="w-36 block lg:hidden" src="img/logo_black.png" alt="logo"></a>     
             <nav class="hidden lg:block pl-24 mx-auto">
                 <ul class="navigation flex text-sm font-medium space-x-10">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">features</a></li>
-                    <li><a href="#">pricing</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">home</a></li>
+                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">features</a></li>
+                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">pricing</a></li>
+                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">about us</a></li>
+                    <li class="nav-item py-2"><a class="link transition ease-in" href="contact.html">contact</a></li>
                 </ul>
             </nav>
             <a class="flex items-center ml-auto py-1 px-6 bg-[#4527b9] rounded-full font-bold text-lg tracking-widest space-x-2" href="#">
@@ -563,6 +580,7 @@
 
     <!-- back to top -->
     <button  id="btn" class="hidden fixed z-50 bottom-4 right-4 focus:outline-none bg-transparent text-black py-3 px-4 border border-gray-400 rounded-full transition ease-in" onclick="topFunction()"><i class="fas fa-chevron-up"></i></button>
+    
     <script src="app.js"></script>
 </body>
 </html>

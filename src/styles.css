@@ -5,3 +5,29 @@
 html {
     scroll-behavior: smooth;
   }
+
+.nav-item,
+.nav-item:after,
+.nav-item:before,
+.nav-item a {
+  transition: all .5s;
+}
+
+ul.navigation li {
+  position: relative;
+}
+
+ul.navigation li:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  height: 1px;
+}
+
+ul.navigation li:hover:after {
+  width: 100%;
+}

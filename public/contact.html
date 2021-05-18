@@ -7,7 +7,25 @@
     <title>PODtomatic - Create and publish print-on-demand products to Amazon and Etsy DAILY in just 5 MINUTES!</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '482654329825120');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=482654329825120&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body class="m-0 font-inter">
     <!-- navigation -->
@@ -91,6 +109,8 @@
         </div>
         <p class="max-w-screen-xl mx-auto text-sm px-6 md:px-12 py-8">© Copyright 2020-<a href="policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
     </div>
+
+    <button  id="btn" class="hidden fixed z-50 bottom-4 right-4 focus:outline-none bg-transparent text-black py-3 px-4 border border-gray-400 rounded-full transition ease-in" onclick="topFunction()"><i class="fas fa-chevron-up"></i></button>
 
     <script src="app.js"></script>
 </body>

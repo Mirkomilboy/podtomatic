@@ -18,19 +18,20 @@ mobileBtn.addEventListener("click", (e) => {
 });
 
 // =============== changing bg of nav on scroll ===============
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunctionNav()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("nav").style.cssText = "background: #4527b9;";
-  } else {
-    document.getElementById("nav").style.cssText = "background: none;";
-  }
-}
+// function scrollFunctionNav() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     document.getElementById("nav").style.cssText = "background: #4527b9;";
+//   } else {
+//     document.getElementById("nav").style.cssText = "background: none;";
+//   }
+// }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunctionNav()};
 
-function scrollFunction() {
+function scrollFunctionNav() {
+  // console.log('working');
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("contact").style.cssText = "background: #fff;";
     document.querySelector(".text").style.cssText = "color: #000;";
@@ -95,7 +96,7 @@ function topFunction() {
 }
 
 // =============== scrollReveal ===============
-window.sr = ScrollReveal();
+if (window.sr = ScrollReveal()) {
   sr.reveal('.left', {
     duration: 2000,
     distance: '30px',
@@ -136,3 +137,4 @@ window.sr = ScrollReveal();
     distance: '30px',
     delay: 1000
   });
+} 
