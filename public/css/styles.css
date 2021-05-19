@@ -637,9 +637,6 @@ video {
 .max-w-screen-xl {
 	max-width: 1280px;
 }
-.origin-0 {
-	transform-origin: 0%;
-}
 .grid-cols-1 {
 	grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -898,10 +895,6 @@ video {
 	padding-top: 7rem;
 	padding-bottom: 7rem;
 }
-.px-44 {
-	padding-left: 11rem;
-	padding-right: 11rem;
-}
 .px-10 {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
@@ -949,7 +942,7 @@ video {
 	text-align: center;
 }
 .font-inter {
-	font-family: Inter;
+	font-family: Inter, sans-serif;
 }
 .text-sm {
 	font-size: 0.875rem;
@@ -1279,14 +1272,14 @@ ul.navigation li:hover:after {
 		padding-right: 2rem;
 	}
 
-	.md\:py-5 {
-		padding-top: 1.25rem;
-		padding-bottom: 1.25rem;
-	}
-
 	.md\:px-44 {
 		padding-left: 11rem;
 		padding-right: 11rem;
+	}
+
+	.md\:py-5 {
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
 	}
 }
 

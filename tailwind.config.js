@@ -6,8 +6,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        brand: {
+          primary: '#f8f9fa',
+          secondary: '#8167e6',
+          blue: '#4527b9',
+        }
+      },
       fontFamily: {
-        inter: ["Inter"],
+        inter: ['Inter', 'sans-serif'],
       },
       transformOrigin: {
         "0": "0%",
@@ -19,7 +26,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-pseudo-elements'),
-    plugin(({addUtilities}) => {
+    plugin(({ addUtilities }) => {
       const newUtilities = {
         ".empty-content": {
           content: "''",
