@@ -9,9 +9,9 @@
   }
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   @apply relative font-inter text-white;
