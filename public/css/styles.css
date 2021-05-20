@@ -601,17 +601,24 @@ video {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 }
+.-mx-4 {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
 .mr-2 {
 	margin-right: 0.5rem;
 }
 .ml-4 {
 	margin-left: 1rem;
 }
+.mb-1 {
+	margin-bottom: 0.25rem;
+}
 .mb-5 {
 	margin-bottom: 1.25rem;
 }
-.mb-1 {
-	margin-bottom: 0.25rem;
+.ml-auto {
+	margin-left: auto;
 }
 .inline-block {
 	display: inline-block;
@@ -658,20 +665,26 @@ video {
 .w-24 {
 	width: 6rem;
 }
+.w-14 {
+	width: 3.5rem;
+}
 .w-auto {
 	width: auto;
 }
-.w-0 {
-	width: 0px;
+.w-1\/2 {
+	width: 50%;
 }
-.w-14 {
-	width: 3.5rem;
+.w-5\/12 {
+	width: 41.666667%;
 }
 .max-w-main {
 	max-width: 1200px;
 }
 .max-w-screen-xl {
 	max-width: 1280px;
+}
+.max-w-2xl {
+	max-width: 42rem;
 }
 .grid-cols-1 {
 	grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -783,10 +796,11 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
 }
-.bg-\[rgba\(0\2c 0\2c 0\2c \.1\)\] {
-	background-color: rgba(0,0,0,.1);
+.bg-black {
+	--tw-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
-.bg-\[\#19171f\] {
+.bg-brand-dark {
 	--tw-bg-opacity: 1;
 	background-color: rgba(25, 23, 31, var(--tw-bg-opacity));
 }
@@ -794,9 +808,9 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
 }
-.bg-\[\#1e1d27\] {
+.bg-brand-darker {
 	--tw-bg-opacity: 1;
-	background-color: rgba(30, 29, 39, var(--tw-bg-opacity));
+	background-color: rgba(27, 26, 35, var(--tw-bg-opacity));
 }
 .bg-indigo-600 {
 	--tw-bg-opacity: 1;
@@ -813,10 +827,6 @@ video {
 .bg-gray-50 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
-}
-.bg-black {
-	--tw-bg-opacity: 1;
-	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 .bg-opacity-10 {
 	--tw-bg-opacity: 0.1;
@@ -837,20 +847,11 @@ video {
 .p-1 {
 	padding: 0.25rem;
 }
-.p-12 {
-	padding: 3rem;
-}
-.p-4 {
-	padding: 1rem;
-}
 .p-6 {
 	padding: 1.5rem;
 }
-.p-14 {
-	padding: 3.5rem;
-}
-.p-10 {
-	padding: 2.5rem;
+.p-4 {
+	padding: 1rem;
 }
 .px-4 {
 	padding-left: 1rem;
@@ -924,9 +925,9 @@ video {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
-.px-3 {
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+.py-10 {
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
 }
 .px-2 {
 	padding-left: 0.5rem;
@@ -943,14 +944,6 @@ video {
 .px-10 {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
-}
-.py-2\.5 {
-	padding-top: 0.625rem;
-	padding-bottom: 0.625rem;
-}
-.py-10 {
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
 }
 .pt-40 {
 	padding-top: 10rem;
@@ -1120,6 +1113,10 @@ video {
 	--tw-placeholder-opacity: 1;
 	color: rgba(107, 114, 128, var(--tw-placeholder-opacity));
 }
+.shadow-circle {
+	--tw-shadow: 5px 5px 10px 0px rgb(129 103 230 / 30%);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .shadow-2xl {
 	--tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1275,14 +1272,14 @@ ul.navigation li:hover:after {
 		padding-right: 4rem;
 	}
 
-	.sm\:px-12 {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
-
 	.sm\:px-8 {
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+
+	.sm\:px-12 {
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 
 	.sm\:px-10 {
@@ -1323,6 +1320,10 @@ ul.navigation li:hover:after {
 
 	.md\:w-2\/3 {
 		width: 66.666667%;
+	}
+
+	.md\:w-5\/12 {
+		width: 41.666667%;
 	}
 
 	.md\:grid-cols-2 {
@@ -1376,14 +1377,14 @@ ul.navigation li:hover:after {
 		padding-right: 8rem;
 	}
 
-	.md\:px-20 {
-		padding-left: 5rem;
-		padding-right: 5rem;
-	}
-
 	.md\:px-8 {
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+
+	.md\:px-20 {
+		padding-left: 5rem;
+		padding-right: 5rem;
 	}
 
 	.md\:px-44 {
@@ -1440,8 +1441,8 @@ ul.navigation li:hover:after {
 		width: auto;
 	}
 
-	.lg\:w-1\/2 {
-		width: 50%;
+	.lg\:w-5\/12 {
+		width: 41.666667%;
 	}
 
 	.lg\:grid-cols-3 {
@@ -1460,12 +1461,6 @@ ul.navigation li:hover:after {
 		margin-bottom: calc(0px * var(--tw-space-y-reverse));
 	}
 
-	.lg\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
-		--tw-space-x-reverse: 0;
-		margin-right: calc(7rem * var(--tw-space-x-reverse));
-		margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
-	}
-
 	.lg\:bg-transparent {
 		background-color: transparent;
 	}
@@ -1473,11 +1468,6 @@ ul.navigation li:hover:after {
 	.lg\:py-0 {
 		padding-top: 0px;
 		padding-bottom: 0px;
-	}
-
-	.lg\:px-0 {
-		padding-left: 0px;
-		padding-right: 0px;
 	}
 
 	.lg\:px-40 {
