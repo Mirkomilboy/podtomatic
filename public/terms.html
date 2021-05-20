@@ -1,138 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PODtomatic - Create and publish print-on-demand products to Amazon and Etsy DAILY in just 5 MINUTES!</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Font Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,200,300,500,600,700,800">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '482654329825120');
-    fbq('track', 'PageView');
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '482654329825120');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=482654329825120&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=482654329825120&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 </head>
-<body class="m-0 font-inter">
-    <!-- navigation -->
-    <div id="contact" class="fixed w-full shadow-lg text-white bg-gray-100 lg:bg-[#1b1a23]">
-        <div class="uppercase flex items-center max-w-screen-xl mx-auto py-7 px-6 sm:px-16">
-            <a href="index.html"><img class="logo w-36 hidden lg:block" src="img/logo.png" alt="logo"></a>     
-            <a href="index.html"><img class="logoBlack w-36 block lg:hidden" src="img/logo_black.png" alt="logo"></a>     
-            <nav class="hidden lg:block pl-24 mx-auto">
-                <ul class="text flex text-sm font-medium space-x-10">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">features</a></li>
-                    <li><a href="#">pricing</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
-            <a class="flex items-center ml-auto py-1 px-6 bg-[#4527b9] rounded-full font-bold text-lg tracking-widest space-x-2" href="#">
-                <i class="far fa-user-circle"></i>
-                <p>Login</p>
-            </a>
-            <button class="toggle-button block lg:hidden ml-6 p-2 bg-[#4527b9] focus:outline-none"><i class="fas fa-bars fa-lg"></i></button>
-        </div>
-        <nav class="mobile-content hidden bg-gray-100">
-            <ul class="max-w-screen-xl mx-auto uppercase text-gray-400 text-sm font-medium p-8">
-                <li class="border-b border-gray-300 py-4"><a href="#">home</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">features</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">pricing</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">about us</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">contact</a></li>
-            </ul>
+
+<body>
+    <!-- Header -->
+    <header class="w-full h-20 sm:h-24 bg-white lg:bg-transparent fixed top-0 transition-colors duration-300 z-1000">
+        <nav class="max-w-main h-full relative mx-auto px-4">
+            <div class="h-full flex items-center justify-between flex-wrap">
+                <div class="logo">
+                    <a href="index.html" class="inline-block py-7 sm:py-10 leading-9">
+                        <img alt="logo-light" class="hidden lg:block" src="img/logo-light.png" />
+                        <img alt="logo" class="lg:hidden" src="img/logo-black.png" />
+                    </a>
+                </div>
+                <div
+                    class="nav-menu w-full lg:w-auto bg-white text-black lg:bg-transparent lg:text-white lg:flex items-center absolute lg:static top-20 left-0 hidden">
+                    <ul class="lg:flex py-5 lg:py-0">
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">home</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">features</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">pricing</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">about us</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="contact.html" class="inline-block px-5 leading-9 tracking-wider">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <a href="#"
+                        class="bg-brand-blue flex items-center md:text-lg text-white font-bold uppercase tracking-widest py-1 px-5 leading-8 rounded-full transition-shadow duration-300 hover:shadow-button">
+
+                        <span class="inline-block mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        login
+                    </a>
+
+                    <button class="menu-toggle lg:hidden bg-brand-blue ml-4 p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </nav>
-    </div>
+    </header>
 
     <!-- hero -->
     <div class="bg-[#1b1a23] text-white pt-40 pb-28 px-6">
         <h1 class="text-5xl text-center font-bold pb-4">Terms of Use</h1>
-        <p class="text-center text-xl">These terms and conditions outline the rules and regulations for the use of PODtomatic's Website.</p>
+        <p class="text-center text-xl">These terms and conditions outline the rules and regulations for the use of
+            PODtomatic's Website.</p>
     </div>
 
     <!-- content -->
     <div class="border-b">
         <div class="max-w-screen-xl mx-auto py-24 px-6 sm:px-16">
-            <p class="text-xl leading-relaxed text-gray-600">By accessing this website we assume you accept these terms and conditions in full. Do not continue to use PODtomatic's website if you do not accept all of the terms and conditions stated on this page. <br><br>
+            <p class="text-xl leading-relaxed text-gray-600">By accessing this website we assume you accept these terms
+                and conditions in full. Do not continue to use PODtomatic's website if you do not accept all of the
+                terms and conditions stated on this page. <br><br>
 
-                The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: "Client", "You" and "Your" refers to you, the person accessing this website and accepting the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves, or either the Client or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services/products, in accordance with and subject to, prevailing law of . Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+                The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice
+                and any or all Agreements: "Client", "You" and "Your" refers to you, the person accessing this website
+                and accepting the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us",
+                refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves, or either
+                the Client or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary
+                to undertake the process of our assistance to the Client in the most appropriate manner, whether by
+                formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client's
+                needs in respect of provision of the Company's stated services/products, in accordance with and subject
+                to, prevailing law of . Any use of the above terminology or other words in the singular, plural,
+                capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.
+            </p>
             <h1 class="text-[34px] font-black py-6">Cookies</h1>
-            <p class="text-xl leading-relaxed text-gray-600">We employ the use of cookies. By using PODtomatic's website you consent to the use of cookies in accordance with PODtomatic's privacy policy. <br><br>
+            <p class="text-xl leading-relaxed text-gray-600">We employ the use of cookies. By using PODtomatic's website
+                you consent to the use of cookies in accordance with PODtomatic's privacy policy. <br><br>
 
-                Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.</p>
+                Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each
+                visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of
+                use for those people visiting. Some of our affiliate / advertising partners may also use cookies.</p>
             <h1 class="text-[34px] font-black py-6">License</h1>
-            <p class="text-xl leading-relaxed text-gray-600">Unless otherwise stated, PODtomatic and/or it's licensors own the intellectual property rights for all material on PODtomatic. All intellectual property rights are reserved. You may view and/or print pages from http://podtomatic.com/ for your own personal use subject to restrictions set in these terms and conditions. <br><br>
+            <p class="text-xl leading-relaxed text-gray-600">Unless otherwise stated, PODtomatic and/or it's licensors
+                own the intellectual property rights for all material on PODtomatic. All intellectual property rights
+                are reserved. You may view and/or print pages from http://podtomatic.com/ for your own personal use
+                subject to restrictions set in these terms and conditions. <br><br>
 
                 You must not: <br><br>
-                
+
                 Republish material from http://podtomatic.com/ <br>
                 Sell, rent or sub-license material from http://podtomatic.com/ <br>
                 Reproduce, duplicate or copy material from http://podtomatic.com/ <br><br>
                 Redistribute content from PODtomatic (unless content is specifically made for redistribution).</p>
             <h1 class="text-[34px] font-black py-6">Hyperlinking to our Content</h1>
-            <p class="text-xl leading-relaxed text-gray-600">The following organizations may link to our Web site without prior written approval: <br>
+            <p class="text-xl leading-relaxed text-gray-600">The following organizations may link to our Web site
+                without prior written approval: <br>
                 Government agencies; <br>
                 Search engines; <br>
                 News organizations; <br>
-                Online directory distributors when they list us in the directory may link to our Web site in the same manner as they hyperlink to the Web sites of other listed businesses; and <br>
-                Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site. <br><br>
-                These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site. <br>
-                We may consider and approve in our sole discretion other link requests from the following types of organizations: <br>
-                commonly-known consumer and/or business information sources such as Chambers of Commerce, American Automobile Association, AARP and Consumers Union; <br>
+                Online directory distributors when they list us in the directory may link to our Web site in the same
+                manner as they hyperlink to the Web sites of other listed businesses; and <br>
+                Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and
+                charity fundraising groups which may not hyperlink to our Web site. <br><br>
+                These organizations may link to our home page, to publications or to other Web site information so long
+                as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or
+                approval of the linking party and its products or services; and (c) fits within the context of the
+                linking party's site. <br>
+                We may consider and approve in our sole discretion other link requests from the following types of
+                organizations: <br>
+                commonly-known consumer and/or business information sources such as Chambers of Commerce, American
+                Automobile Association, AARP and Consumers Union; <br>
                 dot.com community sites; <br>
                 associations or other groups representing charities, including charity giving sites, <br>
                 online directory distributors; <br>
                 internet portals; <br>
                 accounting, law and consulting firms whose primary clients are businesses; and <br>
                 educational institutions and trade associations. <br><br>
-                We will approve link requests from these organizations if we determine that: (a) the link would not reflect unfavorably on us or our accredited businesses (for example, trade associations or other organizations representing inherently suspect types of business, such as work-at-home opportunities, shall not be allowed to link); (b)the organization does not have an unsatisfactory record with us; (c) the benefit to us from the visibility associated with the hyperlink outweighs the absence of PODtomatic Company; and (d) where the link is in the context of general resource information or is otherwise consistent with editorial content in a newsletter or similar product furthering the mission of the organization. <br><br>
-                
-                These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and it products or services; and (c) fits within the context of the linking party's site. <br><br>
-                
-                If you are among the organizations listed in paragraph 2 above and are interested in linking to our website, you must notify us by sending an e-mail to <a class="text-[#4527b9]" href="mailto:support@podtomatic.com">support@podtomatic.com</a>. Please include your name, your organization name, contact information (such as a phone number and/or e-mail address) as well as the URL of your site, a list of any URLs from which you intend to link to our Web site, and a list of the URL(s) on our site to which you would like to link. Allow 2-3 weeks for a response. <br><br>
-                
+                We will approve link requests from these organizations if we determine that: (a) the link would not
+                reflect unfavorably on us or our accredited businesses (for example, trade associations or other
+                organizations representing inherently suspect types of business, such as work-at-home opportunities,
+                shall not be allowed to link); (b)the organization does not have an unsatisfactory record with us; (c)
+                the benefit to us from the visibility associated with the hyperlink outweighs the absence of PODtomatic
+                Company; and (d) where the link is in the context of general resource information or is otherwise
+                consistent with editorial content in a newsletter or similar product furthering the mission of the
+                organization. <br><br>
+
+                These organizations may link to our home page, to publications or to other Web site information so long
+                as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or
+                approval of the linking party and it products or services; and (c) fits within the context of the
+                linking party's site. <br><br>
+
+                If you are among the organizations listed in paragraph 2 above and are interested in linking to our
+                website, you must notify us by sending an e-mail to <a class="text-[#4527b9]"
+                    href="mailto:support@podtomatic.com">support@podtomatic.com</a>. Please include your name, your
+                organization name, contact information (such as a phone number and/or e-mail address) as well as the URL
+                of your site, a list of any URLs from which you intend to link to our Web site, and a list of the URL(s)
+                on our site to which you would like to link. Allow 2-3 weeks for a response. <br><br>
+
                 Approved organizations may hyperlink to our Web site as follows: <br><br>
-                
+
                 By use of our corporate name; or <br>
                 By use of the uniform resource locator (Web address) being linked to; or <br>
-                By use of any other description of our Web site or material being linked to that makes sense within the context and format of content on the linking party's site. <br><br>
-                No use of PODtomatic's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+                By use of any other description of our Web site or material being linked to that makes sense within the
+                context and format of content on the linking party's site. <br><br>
+                No use of PODtomatic's logo or other artwork will be allowed for linking absent a trademark license
+                agreement.</p>
             <h1 class="text-[34px] font-black py-6">Iframes</h1>
-            <p class="text-xl leading-relaxed text-gray-600">Without prior approval and express written permission, you may not create frames around our Web pages or use other techniques that alter in any way the visual presentation or appearance of our Web site.</p>
+            <p class="text-xl leading-relaxed text-gray-600">Without prior approval and express written permission, you
+                may not create frames around our Web pages or use other techniques that alter in any way the visual
+                presentation or appearance of our Web site.</p>
             <h1 class="text-[34px] font-black py-6">Reservation of Rights</h1>
-            <p class="text-xl leading-relaxed text-gray-600">We reserve the right at any time and in its sole discretion to request that you remove all links or any particular link to our Web site. You agree to immediately remove all links to our Web site upon such request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuing to link to our Web site, you agree to be bound to and abide by these linking terms and conditions.</p>
+            <p class="text-xl leading-relaxed text-gray-600">We reserve the right at any time and in its sole discretion
+                to request that you remove all links or any particular link to our Web site. You agree to immediately
+                remove all links to our Web site upon such request. We also reserve the right to amend these terms and
+                conditions and its linking policy at any time. By continuing to link to our Web site, you agree to be
+                bound to and abide by these linking terms and conditions.</p>
             <h1 class="text-[34px] font-black py-6">Removal of links from our website</h1>
-            <p class="text-xl leading-relaxed text-gray-600">If you find any link on our Web site or any linked web site objectionable for any reason, you may contact us about this. We will consider requests to remove links but will have no obligation to do so or to respond directly to you. <br><br>
+            <p class="text-xl leading-relaxed text-gray-600">If you find any link on our Web site or any linked web site
+                objectionable for any reason, you may contact us about this. We will consider requests to remove links
+                but will have no obligation to do so or to respond directly to you. <br><br>
 
-                Whilst we endeavour to ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we commit to ensuring that the website remains available or that the material on the website is kept up to date.</p>
+                Whilst we endeavour to ensure that the information on this website is correct, we do not warrant its
+                completeness or accuracy; nor do we commit to ensuring that the website remains available or that the
+                material on the website is kept up to date.</p>
             <h1 class="text-[34px] font-black py-6">Content Liability</h1>
-            <p class="text-xl leading-relaxed text-gray-600">We shall have no responsibility or liability for any content appearing on your Web site. You agree to indemnify and defend us against all claims arising out of or based upon your Website. No link(s) may appear on any page on your Web site or within any context containing content or materials that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+            <p class="text-xl leading-relaxed text-gray-600">We shall have no responsibility or liability for any
+                content appearing on your Web site. You agree to indemnify and defend us against all claims arising out
+                of or based upon your Website. No link(s) may appear on any page on your Web site or within any context
+                containing content or materials that may be interpreted as libelous, obscene or criminal, or which
+                infringes, otherwise violates, or advocates the infringement or other violation of, any third party
+                rights.</p>
             <h1 class="text-[34px] font-black py-6">Disclaimer</h1>
-            <p class="text-xl leading-relaxed text-gray-600">To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill). Nothing in this disclaimer will: <br><br>
+            <p class="text-xl leading-relaxed text-gray-600">To the maximum extent permitted by applicable law, we
+                exclude all representations, warranties and conditions relating to our website and the use of this
+                website (including, without limitation, any warranties implied by law in respect of satisfactory
+                quality, fitness for purpose and/or the use of reasonable care and skill). Nothing in this disclaimer
+                will: <br><br>
 
                 limit or exclude our or your liability for death or personal injury resulting from negligence; <br>
                 limit or exclude our or your liability for fraud or fraudulent misrepresentation; <br>
                 limit any of our or your liabilities in any way that is not permitted under applicable law; or <br>
                 exclude any of our or your liabilities that may not be excluded under applicable law. <br><br>
-                The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer or in relation to the subject matter of this disclaimer, including liabilities arising in contract, in tort (including negligence) and for breach of statutory duty. <br><br>
-                
-                To the extent that the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+                The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer:
+                (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer
+                or in relation to the subject matter of this disclaimer, including liabilities arising in contract, in
+                tort (including negligence) and for breach of statutory duty. <br><br>
+
+                To the extent that the website and the information and services on the website are provided free of
+                charge, we will not be liable for any loss or damage of any nature.</p>
             <h1 class="text-[34px] font-black pt-16 pb-6">Credit & Contact Information</h1>
-            <p class="text-xl leading-relaxed text-gray-600">If you have any queries regarding any of our terms, please contact us.</p>
+            <p class="text-xl leading-relaxed text-gray-600">If you have any queries regarding any of our terms, please
+                contact us.</p>
         </div>
     </div>
 
@@ -143,8 +243,11 @@
             <div class="max-w-screen-xl mx-auto px-6 md:px-14 py-24">
                 <div class="lg:flex lg:space-x-20 space-y-16 lg:space-y-0">
                     <div>
-                        <a class="inline-block pb-4" href="index.html"><img class="w-36" src="img/logo_black.png" alt="logo"></a>
-                        <p class="leading-8 text-sm">Build and grow passive income by selling print-on-demand products automagically. No need to hire VA or graphic designer! This website in no way is affiliated with Facebook or any Facebook entities.</p>
+                        <a class="inline-block pb-4" href="index.html"><img class="w-36" src="img/logo-black.png"
+                                alt="logo"></a>
+                        <p class="leading-8 text-sm">Build and grow passive income by selling print-on-demand products
+                            automagically. No need to hire VA or graphic designer! This website in no way is affiliated
+                            with Facebook or any Facebook entities.</p>
                     </div>
                     <div class="w-60"></div>
                     <div>
@@ -155,9 +258,11 @@
                 </div>
             </div>
         </div>
-        <p class="max-w-screen-xl mx-auto text-sm px-6 md:px-12 py-8">© Copyright 2020-<a href="policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+        <p class="max-w-screen-xl mx-auto text-sm px-6 md:px-12 py-8">© Copyright 2020-<a href="policy.html">Privacy
+                Policy</a> | <a href="terms.html">Terms of Use</a></p>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>

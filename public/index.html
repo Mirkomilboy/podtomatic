@@ -42,58 +42,93 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=482654329825120&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
+
+
 </head>
 
-<body class="text-white m-0 font-inter">
-    <!-- navigation -->
-    <div id="nav" class="fixed w-full bg-gray-100 lg:bg-[#1b1a23] md:px-36">
-        <div class="uppercase flex items-center max-w-screen-xl mx-auto py-7 px-12">
-            <a href="index.html"><img class="w-36 hidden lg:block" src="img/logo.png" alt="logo"></a>
-            <a href="index.html"><img class="w-36 block lg:hidden" src="img/logo_black.png" alt="logo"></a>
-            <nav class="hidden lg:block pl-24 mx-auto">
-                <ul class="navigation flex text-sm font-medium space-x-10">
-                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">home</a></li>
-                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">features</a></li>
-                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">pricing</a></li>
-                    <li class="nav-item py-2"><a class="link transition ease-in" href="#">about us</a></li>
-                    <li class="nav-item py-2"><a class="link transition ease-in" href="contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <a class="flex items-center ml-auto py-1 px-6 bg-[#4527b9] rounded-full font-bold text-lg tracking-widest space-x-2"
-                href="#">
-                <i class="far fa-user-circle"></i>
-                <p>Login</p>
-            </a>
-            <button class="toggle-button block lg:hidden ml-6 p-2 bg-[#4527b9] focus:outline-none"><i
-                    class="fas fa-bars fa-lg"></i></button>
-        </div>
-        <nav class="mobile-content hidden bg-gray-100">
-            <ul class="max-w-screen-xl mx-auto uppercase text-gray-400 text-sm font-medium p-8">
-                <li class="border-b border-gray-300 py-4"><a href="#">home</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">features</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">pricing</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">about us</a></li>
-                <li class="border-b border-gray-300 py-4"><a href="#">contact</a></li>
-            </ul>
+<body>
+    <!-- Header -->
+    <header class="w-full h-20 sm:h-24 bg-white lg:bg-transparent fixed top-0 transition-colors duration-300 z-1000">
+        <nav class="max-w-main h-full relative mx-auto px-4">
+            <div class="h-full flex items-center justify-between flex-wrap">
+                <div class="logo">
+                    <a href="index.html" class="inline-block py-7 sm:py-10 leading-9">
+                        <img alt="logo-light" class="hidden lg:block" src="img/logo-light.png" />
+                        <img alt="logo" class="lg:hidden" src="img/logo-black.png" />
+                    </a>
+                </div>
+                <div
+                    class="nav-menu w-full lg:w-auto bg-white text-black lg:bg-transparent lg:text-white lg:flex items-center absolute lg:static top-20 left-0 hidden">
+                    <ul class="lg:flex py-5 lg:py-0">
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">home</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">features</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">pricing</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="#" class="inline-block px-5 leading-9 tracking-wider">about us</a>
+                        </li>
+                        <li class="text-sm font-medium uppercase">
+                            <a href="contact.html" class="inline-block px-5 leading-9 tracking-wider">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <a href="#"
+                        class="bg-brand-blue flex items-center md:text-lg text-white font-bold uppercase tracking-widest py-1 px-5 leading-8 rounded-full transition-shadow duration-300 hover:shadow-button">
+
+                        <span class="inline-block mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        login
+                    </a>
+
+                    <button class="menu-toggle lg:hidden bg-brand-blue ml-4 p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </nav>
-    </div>
+    </header>
 
     <!-- hero -->
-    <div style="background-image: url(img/bg.jpg)" class="bg-cover bg-no-repeat py-24">
-        <div class="max-w-screen-xl text-center mx-auto px-6 md:px-20">
-            <h1 class="text-5xl leading-snug font-black">Create and Upload Print-on-Demand Products to Amazon and Etsy
-                DAILY in just <span class="underline">5 MINUTES!</span></h1>
-            <p class="text-xl py-6">Build and grow passive income by selling print-on-demand products automagically. No
-                need to hire VA or graphic designer!</p>
+    <div style="background-image: url(img/bg.jpg)" class="bg-cover bg-no-repeat py-24 lg:pt-28">
+        <div class="max-w-main text-center mx-auto px-4">
+            <h1 class="text-5xl tracking-tighter font-bold leading-tight">
+                Create and Upload Print-on-Demand Products to Amazon and
+                Etsy
+                DAILY in just <span class="underline">5 MINUTES!</span>
+            </h1>
+            <p class="text-xl py-6">
+                Build and grow passive income by selling print-on-demand products automagically. No
+                need to hire VA or graphic designer!
+            </p>
             <div class="space-x-2 py-4">
-                <a class="py-1 px-8 my-1 inline-block bg-[#4527b9] uppercase rounded-full font-bold text-lg tracking-widest"
-                    href="#">learn more</a>
+                <a class="py-1 px-8 my-1 inline-block bg-brand-blue uppercase rounded-full font-bold text-lg tracking-widest"
+                    href="#">
+                    learn more
+                </a>
                 <a class="py-0.5 px-8 my-1 inline-block uppercase border rounded-full font-bold text-lg tracking-widest hover:border-transparent hover:bg-indigo-700 transition ease-in"
-                    href="#">signup</a>
+                    href="#">
+                    signup
+                </a>
             </div>
         </div>
-        <div class="w-full">
-            <iframe class="mx-auto w-full h-full" src="https://player.vimeo.com/video/543189804"
+        <div class="max-w-main embed-responsive relative mx-auto px-4">
+            <iframe class="w-full h-full absolute top-0 left-0 bottom-0" src="https://player.vimeo.com/video/543189804"
                 allowfullscreen="allowfullscreen" frameborder="0"></iframe>
         </div>
     </div>
@@ -101,38 +136,38 @@
     <!-- discover -->
     <div class="bg-[#1b1a23]">
         <div class="max-w-screen-xl mx-auto py-20">
-            <p class="text-center uppercase text-[#4527b9] text-xs font-bold tracking-widest"><span
+            <p class="text-center uppercase text-brand-blue text-xs font-bold tracking-widest"><span
                     class="bg-indigo-400 bg-opacity-10 py-1 px-4 rounded">discover</span></p>
             <h1 class="text-center text-[34px] font-bold py-6 px-6">Incredible PODtomatic Benefits</h1>
-            <div class="w-24 h-0.5 mx-auto bg-[#4527b9]"></div>
+            <div class="w-24 h-0.5 mx-auto bg-brand-blue"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 px-12">
-                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-[#4527b9] transition ease-in duration-300">
-                    <i class="far fa-hand-point-right fa-lg p-4 rounded-full bg-[#4527b9]"></i>
+                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-brand-blue transition ease-in duration-300">
+                    <i class="far fa-hand-point-right fa-lg p-4 rounded-full bg-brand-blue"></i>
                     <h1 class="font-bold text-2xl py-4">Easy to Use</h1>
                     <p class="text-xl">Just connect Amazon or Etsy to the system. That’s all you need to do!</p>
                 </div>
-                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-[#4527b9] transition ease-in duration-300">
-                    <i class="fas fa-industry fa-lg py-4 px-3 rounded-full bg-[#4527b9]"></i>
+                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-brand-blue transition ease-in duration-300">
+                    <i class="fas fa-industry fa-lg py-4 px-3 rounded-full bg-brand-blue"></i>
                     <h1 class="font-bold text-2xl py-4">2,000+ Niche Categories</h1>
                     <p class="text-xl">Select niche categories, and let the system create products for you.</p>
                 </div>
-                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-[#4527b9] transition ease-in duration-300">
-                    <i class="fas fa-align-justify fa-lg p-4 rounded-full bg-[#4527b9]"></i>
+                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-brand-blue transition ease-in duration-300">
+                    <i class="fas fa-align-justify fa-lg p-4 rounded-full bg-brand-blue"></i>
                     <h1 class="font-bold text-2xl py-4">Quotes Finder</h1>
                     <p class="text-xl">Find interesting quotes for your chosen niches.</p>
                 </div>
-                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-[#4527b9] transition ease-in duration-300">
-                    <i class="fas fa-edit fa-lg py-4 px-3 rounded-full bg-[#4527b9]"></i>
+                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-brand-blue transition ease-in duration-300">
+                    <i class="fas fa-edit fa-lg py-4 px-3 rounded-full bg-brand-blue"></i>
                     <h1 class="font-bold text-2xl py-4">Design Creator</h1>
                     <p class="text-xl">Use your quotes to create simple text-based designs</p>
                 </div>
-                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-[#4527b9] transition ease-in duration-300">
-                    <i class="fas fa-cloud-upload-alt fa-lg py-4 px-3 rounded-full bg-[#4527b9]"></i>
+                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-brand-blue transition ease-in duration-300">
+                    <i class="fas fa-cloud-upload-alt fa-lg py-4 px-3 rounded-full bg-brand-blue"></i>
                     <h1 class="font-bold text-2xl py-4">Product Uploader</h1>
                     <p class="text-xl">Create products and publish them to Amazon and Etsy.</p>
                 </div>
-                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-[#4527b9] transition ease-in duration-300">
-                    <i class="fas fa-cogs fa-lg py-4 px-3 rounded-full bg-[#4527b9]"></i>
+                <div class="p-12 bg-[rgba(0,0,0,.1)] rounded-xl hover:bg-brand-blue transition ease-in duration-300">
+                    <i class="fas fa-cogs fa-lg py-4 px-3 rounded-full bg-brand-blue"></i>
                     <h1 class="font-bold text-2xl py-4">Automated Fulfillment</h1>
                     <p class="text-xl">Send order info to suppliers and let them fulfill the order.</p>
                 </div>
@@ -143,7 +178,7 @@
     <!-- quote -->
     <div class="bg-[#19171f]">
         <div class="max-w-screen-xl mx-auto px-6 md:px-32 py-24">
-            <p class="text-center w-auto uppercase text-[#4527b9] text-xs font-bold tracking-widest"><span
+            <p class="text-center w-auto uppercase text-brand-blue text-xs font-bold tracking-widest"><span
                     class="bg-gray-400 bg-opacity-20 py-1 px-2 rounded">building a print-on-demand empire has never been
                     easier.</span></p>
             <h1 class="text-center text-4xl leading-snug font-bold py-8"><span class="uppercase underline">just
@@ -161,32 +196,32 @@
                 <h1 class="text-5xl leading-tight font-bold"><span class="underline">Never again</span> will you have
                     to...</h1>
                 <div class="flex items-center space-x-8">
-                    <i class="far fa-clock fa-2x p-6 rounded-full bg-[#4527b9] shadow-2xl"></i>
+                    <i class="far fa-clock fa-2x p-6 rounded-full bg-brand-blue shadow-2xl"></i>
                     <p class="text-xl leading-normal">Waste <span class="font-bold">hours</span> finding niches or
                         quotes to create products.</p>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <i class="fas fa-dollar-sign fa-2x py-6 px-8 rounded-full bg-[#4527b9] shadow-2xl"></i>
+                    <i class="fas fa-dollar-sign fa-2x py-6 px-8 rounded-full bg-brand-blue shadow-2xl"></i>
                     <p class="text-xl leading-normal">Pay <span class="font-bold">$300-500 a month</span> to a designer
                         to create designs.</p>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <i class="far fa-money-bill-alt fa-2x py-6 px-5 rounded-full bg-[#4527b9] shadow-2xl"></i>
+                    <i class="far fa-money-bill-alt fa-2x py-6 px-5 rounded-full bg-brand-blue shadow-2xl"></i>
                     <p class="text-xl leading-normal">Burn another <span class="font-bold">$300-500 a month</span> on a
                         virtual assistant to upload tons of products to the marketplaces.</p>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <i class="fas fa-users fa-2x py-6 px-5 rounded-full bg-[#4527b9] shadow-2xl"></i>
+                    <i class="fas fa-users fa-2x py-6 px-5 rounded-full bg-brand-blue shadow-2xl"></i>
                     <p class="text-xl leading-normal">Wait <span class="font-bold">days</span> for your VA to create and
                         publish products to your marketplace accounts</p>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <i class="fas fa-times fa-2x py-6 px-7 rounded-full bg-[#4527b9] shadow-2xl"></i>
+                    <i class="fas fa-times fa-2x py-6 px-7 rounded-full bg-brand-blue shadow-2xl"></i>
                     <p class="text-xl leading-normal">Stress about <span class="font-bold">potential errors</span> made
                         by your VA</p>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <i class="far fa-calendar-times fa-2x py-6 px-7 rounded-full bg-[#4527b9] shadow-2xl"></i>
+                    <i class="far fa-calendar-times fa-2x py-6 px-7 rounded-full bg-brand-blue shadow-2xl"></i>
                     <p class="text-xl leading-normal">Get frustrated because <span class="font-bold">everything is
                             taking forever.</span></p>
                 </div>
@@ -202,15 +237,15 @@
                 Print-on-Demand business – And will save you time and thousands of dollars!</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8 md:px-20 lg:px-40">
                 <div class="flex items-center space-x-8">
-                    <i class="far fa-lightbulb fa-2x py-6 px-7 rounded-full bg-[#4527b9]"></i>
+                    <i class="far fa-lightbulb fa-2x py-6 px-7 rounded-full bg-brand-blue"></i>
                     <p class="text-xl font-bold text-center">Find product ideas</p>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <i class="fas fa-pencil-alt fa-2x p-6 rounded-full bg-[#4527b9]"></i>
+                    <i class="fas fa-pencil-alt fa-2x p-6 rounded-full bg-brand-blue"></i>
                     <p class="text-xl font-bold text-center">Create designs</p>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <i class="fas fa-cloud-upload-alt fa-2x py-6 px-5 rounded-full bg-[#4527b9]"></i>
+                    <i class="fas fa-cloud-upload-alt fa-2x py-6 px-5 rounded-full bg-brand-blue"></i>
                     <p class="text-xl font-bold text-center">Publish products</p>
                 </div>
             </div>
@@ -220,10 +255,10 @@
     <!--  -->
     <div class="bg-[#19171f]">
         <div class="max-w-screen-xl mx-auto pt-20 px-6">
-            <p class="text-center w-auto uppercase text-[#4527b9] text-xs font-bold tracking-widest pb-6"><span
+            <p class="text-center w-auto uppercase text-brand-blue text-xs font-bold tracking-widest pb-6"><span
                     class="bg-indigo-400 bg-opacity-10 py-1 px-4 rounded">and there's more!</span></p>
             <h1 class="text-center text-4xl font-black pb-6">Here's what PODtomatic will do for you:</h1>
-            <div class="w-24 h-0.5 mx-auto bg-[#4527b9]"></div>
+            <div class="w-24 h-0.5 mx-auto bg-brand-blue"></div>
             <div class="md:flex md:space-x-10 space-y-6 md:space-y-0 py-20 sm:px-8">
                 <img class="w-full md:w-1/2 object-contain" src="img/upcoming.png" alt="">
                 <div class="w-full md:w-1/2">
@@ -320,31 +355,31 @@
         <div class="max-w-screen-xl mx-auto py-20 px-6 sm:px-12">
             <h1 class="text-center text-[34px] font-bold pb-6">PODtomatic is the ONLY passive income machine you’ll ever
                 need.</h1>
-            <div class="w-24 h-0.5 mx-auto bg-[#4527b9]"></div>
+            <div class="w-24 h-0.5 mx-auto bg-brand-blue"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-6">
                 <div class="first flex items-center space-x-8">
-                    <i class="fas fa-cloud fa-2x py-6 px-5 rounded-full bg-[#4527b9]"></i>
+                    <i class="fas fa-cloud fa-2x py-6 px-5 rounded-full bg-brand-blue"></i>
                     <p class="text-xl leading-relaxed">Very easy and quick to use. All-in-one cloud-based technology</p>
                 </div>
                 <div class="second flex items-center space-x-8">
-                    <i class="fab fa-gratipay fa-2x p-6 rounded-full bg-[#4527b9]"></i>
+                    <i class="fab fa-gratipay fa-2x p-6 rounded-full bg-brand-blue"></i>
                     <p class="text-xl leading-relaxed">Over 1,000 niche suggestions for products</p>
                 </div>
                 <div class="third flex items-center space-x-8">
-                    <i class="fas fa-th-list fa-2x p-6 rounded-full bg-[#4527b9]"></i>
+                    <i class="fas fa-th-list fa-2x p-6 rounded-full bg-brand-blue"></i>
                     <p class="text-xl leading-relaxed">Over 100,000 quotes for designs</p>
                 </div>
                 <div class="fourth flex items-center space-x-8">
-                    <i class="fas fa-cloud-upload-alt fa-2x py-6 px-5 rounded-full bg-[#4527b9]"></i>
+                    <i class="fas fa-cloud-upload-alt fa-2x py-6 px-5 rounded-full bg-brand-blue"></i>
                     <p class="text-xl leading-relaxed">Automatically publish products to Marketplaces</p>
                 </div>
                 <div class="fifth flex items-center space-x-8">
-                    <i class="fas fa-dollar-sign fa-2x py-6 px-8 rounded-full bg-[#4527b9]"></i>
+                    <i class="fas fa-dollar-sign fa-2x py-6 px-8 rounded-full bg-brand-blue"></i>
                     <p class="text-xl leading-relaxed">Build and grow passive income by selling print-on-demand products
                     </p>
                 </div>
                 <div class="sixth flex items-center space-x-8">
-                    <i class="far fa-thumbs-up fa-2x p-6 rounded-full bg-[#4527b9]"></i>
+                    <i class="far fa-thumbs-up fa-2x p-6 rounded-full bg-brand-blue"></i>
                     <p class="text-xl leading-relaxed">Instantly build your POD empire in just ONE simple step!</p>
                 </div>
             </div>
@@ -402,25 +437,26 @@
                     <h1 class="text-3xl font-bold text-indigo-800 pb-4">early bird</h1>
                     <p class="text-xl">save 51% during launch!</p>
                 </div>
-                <p class="text-center text-xl py-8 px-2 bg-[#4527b9]"><span class="line-through text-4xl">1997</span> $
+                <p class="text-center text-xl py-8 px-2 bg-brand-blue"><span class="line-through text-4xl">1997</span> $
                     <span class="text-5xl font-medium">997</span> /Year
                 </p>
                 <div class="border-b border-gray-700 py-12 px-4 sm:px-10 space-y-4">
-                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-[#4527b9]"></i> 15,000+ Products
+                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-brand-blue"></i> 15,000+ Products
                         Published Yearly</p>
-                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-[#4527b9] "></i> Get Access to
+                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-brand-blue "></i> Get Access to
                         Coffee Mugs, Shot Glasses, Travel Mugs, Camper Mugs, Face Masks, T-shirts, and many other
                         products</p>
-                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-[#4527b9]"></i> Customized
+                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-brand-blue"></i> Customized
                         product description system</p>
-                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-[#4527b9]"></i> Automated
+                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-brand-blue"></i> Automated
                         fulfillment</p>
-                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-[#4527b9]"></i> Free upgrades for
+                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-brand-blue"></i> Free upgrades
+                        for
                         life</p>
-                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-[#4527b9]"></i> + more…</p>
+                    <p class="text-xl leading-loose"><i class="fas fa-check fa-sm text-brand-blue"></i> + more…</p>
                 </div>
                 <div class="text-center py-8">
-                    <a class="py-1 px-8 bg-[#4527b9] uppercase rounded-full font-bold text-lg tracking-widest inline-block"
+                    <a class="py-1 px-8 bg-brand-blue uppercase rounded-full font-bold text-lg tracking-widest inline-block"
                         href="#"><span>get podtomatic now</span></a>
                 </div>
             </div>
@@ -445,6 +481,9 @@
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <h1 class="text-[22px] font-bold py-4">I have made my first sale!</h1>
+                            <div>
+                                <img src="./img/testimonials/1.jpg" alt="">
+                            </div>
                             <p class="pb-6">Well very pleased as I have made my first sale of a PODtomatic product on
                                 Etsy this afternoon. It was a 30oz tumbler and only listed earlier today. It was found
                                 by an Etsy ad.</p>
@@ -459,6 +498,9 @@
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <h1 class="text-[22px] font-bold py-4">My First Sale!</h1>
+                            <div>
+                                <img src="./img/testimonials/3.png" alt="">
+                            </div>
                             <p class="pb-6">Just connected my Etsy Store a couple days ago and now my first sale!!
                                 Thanks for this opportunity!</p>
                             <p class="text-[#4537b9]">Murray Eisner</p>
@@ -472,6 +514,9 @@
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <h1 class="text-[22px] font-bold py-4">Got my first two sales!</h1>
+                            <div>
+                                <img src="./img/testimonials/5.png" alt="">
+                            </div>
                             <p class="pb-6">Got my first two sales! For anyone in doubt, the system works, you just have
                                 to be patient. I got 2 sales two days apart. Just the fact that I didn't have to spend
                                 time or money marketing them is already a huge win!</p>
@@ -488,6 +533,9 @@
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <h1 class="text-[22px] font-bold py-4">Woohoo!</h1>
+                            <div>
+                                <img src="./img/testimonials/2.png" alt="">
+                            </div>
                             <p class="pb-6">I just got my first sale on Etsy using PODtomatic! It's a mug!</p>
                             <p class="text-[#4537b9]">Wazeen Azizan</p>
                         </div>
@@ -500,6 +548,9 @@
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <i class="fas fa-star fa-sm text-[#4537b9]"></i>
                             <h1 class="text-[22px] font-bold py-4">I did NOTHING for this sale!</h1>
+                            <div>
+                                <img src="./img/testimonials/4.png" alt="">
+                            </div>
                             <p class="pb-6">My first sale through Etsy thanks to PODtomatic just shipped! I did NOTHING
                                 for this sale. Nothing. I didn't create the design. I didn't start a campaign in
                                 Gearbubble. I didn't do any of the usual stuff. I set up PODtomatic, set some Etsy ads
@@ -587,7 +638,7 @@
     <!-- about authors -->
     <div class="bg-[#1b1a23]">
         <div class="max-w-screen-xl mx-auto px-6 py-24">
-            <div class="bg-[#4527b9] rounded-lg sm:mx-20 md:mx-36 lg:mx-56 py-12 px-10">
+            <div class="bg-brand-blue rounded-lg sm:mx-20 md:mx-36 lg:mx-56 py-12 px-10">
                 <h1 class="text-[34px] font-bold pb-4">About the Creators</h1>
                 <p class="text-xl leading-relaxed">We have helped hundreds of sellers make over $500,000++ from selling
                     print-on-demand products in the past few years. <br><br>
@@ -697,7 +748,7 @@
             <div class="max-w-screen-xl mx-auto px-6 md:px-14 py-24">
                 <div class="lg:flex lg:space-x-20 space-y-16 lg:space-y-0">
                     <div>
-                        <a class="inline-block pb-4" href="index.html"><img class="w-36" src="img/logo_black.png"
+                        <a class="inline-block pb-4" href="index.html"><img class="w-36" src="img/logo-black.png"
                                 alt="logo"></a>
                         <p class="leading-8 text-sm">Build and grow passive income by selling print-on-demand products
                             automagically. No need to hire VA or graphic designer! This website in no way is affiliated
@@ -721,7 +772,7 @@
         class="hidden fixed z-50 bottom-4 right-4 focus:outline-none bg-transparent text-black py-3 px-4 border border-gray-400 rounded-full transition ease-in"
         onclick="topFunction()"><i class="fas fa-chevron-up"></i></button>
 
-    <script src="app.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

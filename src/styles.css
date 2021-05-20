@@ -2,9 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-behavior: smooth;
+
+@layer utilities {
+  button {
+    @apply focus:outline-none
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply relative font-inter text-white;
+}
+
+
+/* Home embed-video */
+.embed-responsive::before {
+  content: '';
+  padding-top: 56.25%;
+  display: block;
+}
+
 
 .nav-item,
 .nav-item:after,
@@ -30,4 +50,11 @@ ul.navigation li:after {
 
 ul.navigation li:hover:after {
   width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  header.active {
+    @apply bg-brand-blue
+  }
 }

@@ -1,52 +1,21 @@
-// =============== navigation ===============
-const mobileBtn = document.querySelector(".toggle-button");
-mobileBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  const mobileContent = document.querySelector(".mobile-content");
-  if (mobileContent.classList.contains("hidden")) {
-    mobileContent.classList.add("block");
-    mobileContent.classList.remove("hidden");
-  } else if (mobileContent.classList.contains("block")) {
-    mobileContent.classList.add("hidden");
-    mobileContent.classList.remove("block");
-  }
-  if (mobileContent.classList.contains("block")) {
-    mobileContent.style.maxHeight = mobileContent.scrollHeight + "px";
-  } else {
-    mobileContent.style.maxHeight = "0";
-  }
-});
+window.onscroll = function () {
+  const header = document.querySelector("header");
 
-// =============== changing bg of nav on scroll ===============
-// window.onscroll = function() {scrollFunctionNav()};
-
-// function scrollFunctionNav() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById("nav").style.cssText = "background: #4527b9;";
-//   } else {
-//     document.getElementById("nav").style.cssText = "background: none;";
-//   }
-// }
-
-window.onscroll = function() {scrollFunctionNav()};
-
-function scrollFunctionNav() {
-  // console.log('working');
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("contact").style.cssText = "background: #fff;";
-    document.querySelector(".text").style.cssText = "color: #000;";
-    // if (document.querySelector('.logo').classList.contains('block')) {
-    //   document.querySelector('.logo').classList.remove('block');
-    //   document.querySelector('.logoBlack').classList.add('block');
-    // } else if (document.querySelector('.logo').classList.contains('hidden')) {
-    //   document.querySelector('.logo').classList.remove('hidden');
-    //   document.querySelector('.logoBlack').classList.remove('block');
-    // }
+    header.classList.add('active')
   } else {
-    document.getElementById("contact").style.cssText = "background: none;";
-    document.querySelector(".text").style.cssText = "color: #fff;";
+    header.classList.remove('active')
   }
-}
+};
+
+
+document.querySelector('.menu-toggle').addEventListener('click', e => {
+  e.preventDefault();
+
+  document.querySelector('.nav-menu').classList.toggle('hidden')
+})
+
+
 
 // =============== accordion ===============
 const menuLinks = document.querySelectorAll(".accordion button");
@@ -78,7 +47,7 @@ menuLinks.forEach((link) => {
 const topBtn = document.getElementById("btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -137,4 +106,4 @@ if (window.sr = ScrollReveal()) {
     distance: '30px',
     delay: 1000
   });
-} 
+}
