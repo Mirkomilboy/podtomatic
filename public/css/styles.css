@@ -1153,6 +1153,10 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(204, 204, 204, var(--tw-text-opacity));
 }
+.text-brand-dark {
+	--tw-text-opacity: 1;
+	color: rgba(25, 23, 31, var(--tw-text-opacity));
+}
 .underline {
 	text-decoration: underline;
 }
