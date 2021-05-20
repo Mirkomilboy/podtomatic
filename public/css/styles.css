@@ -629,6 +629,15 @@ video {
 .mb-6 {
 	margin-bottom: 1.5rem;
 }
+.mt-3 {
+	margin-top: 0.75rem;
+}
+.mt-1 {
+	margin-top: 0.25rem;
+}
+.mt-2 {
+	margin-top: 0.5rem;
+}
 .inline-block {
 	display: inline-block;
 }
@@ -685,6 +694,9 @@ video {
 }
 .w-5\/12 {
 	width: 41.666667%;
+}
+.w-5\/6 {
+	width: 83.333333%;
 }
 .max-w-main {
 	max-width: 1200px;
