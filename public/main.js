@@ -1,12 +1,23 @@
 window.onscroll = function () {
     const header = document.querySelector("header");
+    const topBtn = document.getElementById("btn");
 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.classList.add('active')
+        topBtn.classList.add('block');
+        topBtn.classList.remove('hidden');
     } else {
         header.classList.remove('active')
+        topBtn.classList.add('hidden');
+        topBtn.classList.remove('block');
     }
 };
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 
 document.querySelector('.menu-toggle').addEventListener('click', e => {
