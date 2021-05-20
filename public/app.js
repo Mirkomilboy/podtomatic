@@ -17,10 +17,11 @@ document.querySelector('.menu-toggle').addEventListener('click', e => {
 
 
 
-// =============== accordion ===============
+// =============== FAQ accordion ===============
 const menuLinks = document.querySelectorAll(".accordion button");
 menuLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
+    e.preventDefault()
     let menuContent = link.nextElementSibling;
     let active = document.querySelector(".accordion section.active");
 
@@ -28,16 +29,17 @@ menuLinks.forEach((link) => {
       if (active) {
         if (link.parentElement.classList.contains("active")) {
           link.parentElement.classList.remove("active");
-          active.lastElementChild.style.height = "0";
+          active.lastElementChild.classList.remove('!max-h-96')
         } else {
           active.classList.remove("active");
-          active.lastElementChild.style.height = "0";
+          active.lastElementChild.classList.remove('!max-h-96')
+          console.log(active)
           link.parentElement.classList.add("active");
-          menuContent.style.height = menuContent.scrollHeight + "px";
+          menuContent.classList.add('!max-h-96')
         }
       } else {
         link.parentElement.classList.add("active");
-        menuContent.style.height = menuContent.scrollHeight + "px";
+        menuContent.classList.add('!max-h-96')
       }
     }
   });
