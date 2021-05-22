@@ -27,32 +27,36 @@ document.querySelector('.menu-toggle').addEventListener('click', e => {
 
 
 // =============== FAQ accordion ===============
-const menuLinks = document.querySelectorAll(".accordion button");
-menuLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
+const faqButtons = document.querySelectorAll(".accordion button");
+
+faqButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
         e.preventDefault()
-        let menuContent = link.nextElementSibling;
+        let menuContent = button.nextElementSibling;
         let active = document.querySelector(".accordion section.active");
 
         if (menuContent) {
             if (active) {
-                if (link.parentElement.classList.contains("active")) {
-                    link.parentElement.classList.remove("active");
+                if (button.parentElement.classList.contains("active")) {
+                    button.parentElement.classList.remove("active");
                     active.lastElementChild.classList.remove('!max-h-96')
                 } else {
                     active.classList.remove("active");
                     active.lastElementChild.classList.remove('!max-h-96')
-                    console.log(active)
-                    link.parentElement.classList.add("active");
+                    button.parentElement.classList.add("active");
                     menuContent.classList.add('!max-h-96')
                 }
             } else {
-                link.parentElement.classList.add("active");
+                button.parentElement.classList.add("active");
                 menuContent.classList.add('!max-h-96')
             }
         }
     });
 });
+
+setTimeout(() => {
+    document.querySelector('#preloader').style.display = 'none'
+}, 700);
 
 // =============== scrollReveal ===============
 if (window.sr = ScrollReveal()) {
